@@ -20,6 +20,8 @@ class Transfer
     if @sender.balance < @amount
       @status = "rejected"
       return "Transaction rejected."
+  end
+end
  
   def reverse_transfer
     if @status == "complete"
